@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+  <children>
+    <AnchorPane style="-fx-background-color: #000000;" VBox.vgrow="ALWAYS">
+      <children>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="43.0" prefHeight="39.0" prefWidth="246.0" style="-fx-background-color: #000000;" text="Eurofins Work Schedule Planner " textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="632.0" layoutY="84.0" prefHeight="339.0" prefWidth="291.0" style="-fx-border-color: white; -fx-background-color: black;" styleClass="fx">
+               <children>
+                  <Label layoutX="92.0" layoutY="78.0" prefHeight="17.0" prefWidth="109.0" text="Username" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="154.0" prefHeight="17.0" prefWidth="109.0" text="Password" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" layoutX="71.0" layoutY="120.0" promptText="username" />
+                  <PasswordField fx:id="passwordTextField" layoutX="71.0" layoutY="197.0" promptText="password" />
+                  <Button fx:id="loginButton" layoutX="120.0" layoutY="264.0" mnemonicParsing="false" onAction="#login" text="Login" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="189.0" fitWidth="355.0" layoutX="185.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@eurofins_WHITE.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="162.0" fitWidth="291.0" layoutX="211.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@chemistry.gif" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
